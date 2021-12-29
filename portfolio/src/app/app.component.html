@@ -1,0 +1,117 @@
+<header>
+  <!-- navbar -->
+  <section class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong>BryanCampos</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navitems" aria-controls="navitems" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navitems">
+          <ul class="navbar-nav mb-2 mb-lg-0"> <!-- me-auto -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Sobre Mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Soluciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trabajos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">English</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- hero -->
+  <section class="container pt-5 pb-5">
+    <div class="row no-m-p3">
+      <div class="col-lg-6 d-flex flex-column justify-content-center">
+        <div class="content">
+          <h1 class="brand-font"><strong>Tu experto en diseño web</strong></h1>
+          <p class="mb-0">Agenda una llamada estrategia de 15-20 minutos</p>
+          <p>(sin costo ni compromiso)</p>
+          <br>
+          <div class="d-flex flex-wrap">
+            <a class="btn btn-primary --mr">Contactar Via Whatsapp</a>
+            <a class="btn btn-outline-primary">Agendar Videollamada</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="content">
+          <img class="heroimg w-100" src="assets/img/ipad.png" alt="image of an ipad showing a website design">
+        </div>
+      </div>
+    </div>
+    <div class="row no-m-p3">
+      <h6 class="text-center">Implementando las mejores prácticas y frameworks</h6>
+      <div class="d-flex justify-content-center">
+        <div class="content">
+          <ul class="d-flex mt-3 technologies">
+            <li><img src="assets/img/html.svg" alt=""></li>
+            <li><img src="assets/img/css.svg" alt=""></li>
+            <li><img src="assets/img/js.svg" alt=""></li>
+            <li><img src="assets/img/typescript.svg" alt=""></li>
+            <li><img src="assets/img/angular.svg" alt=""></li>
+            <li><img src="assets/img/react.svg" alt=""></li>
+            <li><img src="assets/img/git-icon.svg" alt=""></li>
+            <li><img src="assets/img/bootstrap-5-1.svg" alt=""></li>
+            <li><img src="assets/img/figma-1.svg" alt=""></li>
+            <li><img src="assets/img/illustrator.svg" alt=""></li>
+            <li><img src="assets/img/firebase.svg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+
+<!-- services section -->
+<section id="services" class="container-fluid pt-5 pb-5 accent-light-bg">
+  <div class="container column no-m-p3">
+    <div class="text-center">
+      <h6 class="mb-3">Servicios</h6>
+      <h3>Las soluciones de desarrollo incluyen <span class="accent"><strong>1 año de soporte</strong></span></h3>
+      <p>Asi puedes enfocarte 100% en tus tareas del dia a dia sabiendo
+        que tu app está operando 24/7
+      </p>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-6 col-lg-4 " *ngFor="let i of servicios">
+        <div class="d-flex">
+          <img class="p-3" [src]=" 'assets/img/services/' + i.icon + '.png' " alt="">
+          <div class="text-left p-3">
+            <h5 class="mb-0">{{i.servicio}}</h5>
+            <p>{{i.descripcion}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- work -->
+<section id="workhistory" class="container-fluid pt-5 pb-5 light-bg">
+  <div class="column container no-m-p3">
+    <div class="text-center">
+      <h6 class="mb-3">Trabajo</h6>
+      <h3>Proyectos Recientes</h3>
+    </div>
+    <div class="row grid mt-5">
+      <div class="grid-item" *ngFor="let i of trabajos">
+        <div class="card w-100" >
+          <img [src]=" 'assets/img/work/' + i.imagen + '.jpg' " class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{i.trabajo}}</h5>
+            <p class="card-text">{{i.descripcion}}</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

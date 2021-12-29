@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,700&family=Raleway:ital,wght@0,700;1,700&display=swap');
+
+//variables
+$main-font-family: Poppins;
+$brand-font-family: Raleway;
+$light-background: #f8f8fa;
+$description-color: #646464;
+$accent-color: #6816ED;
+$accent-color-light: #F4F4FF;
+//media queries
+@media (min-width:576px) {
+    .no-m-p3 {
+        padding: 0.75rem !important;
+    }
+}
+//general styling
+html {
+    font-size: 18px;
+}
+body {
+    font-family: $main-font-family !important;
+    .brand-font {
+        font-family: $brand-font-family !important;
+    }
+}
+header {
+    //height: 100vh;
+    background-color: $light-background;
+}
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+}
+h2 {font-size: 2.441rem;}
+h3 {font-size: 1.953rem;}
+h4 {font-size: 1.563rem;}
+h5 {font-size: 1.25rem;}
+small, .text_small {font-size: 0.8rem;}
+p {
+    color: $description-color;
+}
+//custom classes
+.--mr {
+    margin-right: 1rem;
+}
+.content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.technologies li {
+    margin: 0rem 0.5rem;
+    img {
+        width: 58px;
+        height: 58px;
+    }
+}
+
+#services img {
+    width: 90px;
+    height: 90px;
+}
+#workhistory .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+.accent-light-bg {
+    background-color: $accent-color-light;
+}
+.light-bg {
+    background-color: $light-background;
+}
