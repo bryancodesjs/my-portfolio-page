@@ -45,6 +45,15 @@ p {
 .--mr {
     margin-right: 1rem;
 }
+.navbar .nav-item {
+    margin: 0rem 1rem;
+    cursor: pointer;
+    &:hover {
+        .nav-link {
+            color: $accent-color !important;
+        }
+    }
+}
 .--mr-half {
     margin-right: 0.5rem;
 }
@@ -85,8 +94,19 @@ a i {
 #workhistory {
     .grid-item {
         .card {
+            transition: 0.5s ease-out;
             &:hover {
+                transition: 0.2s ease;
                 cursor: pointer;
+                background-color: $accent-color-light;
+                overflow: hidden;
+                .card-title {
+                    color: $accent-color !important;
+                }
+                .card-img-top {
+                    opacity: 0.5;
+                    transition: 0.3s ease;
+                }
             }
         }
     }
@@ -140,4 +160,7 @@ footer {
     &:hover {
         background-color: lighten($color: $accent-color, $amount: 5%) !important;
     }
+}
+.profile-pic {
+    max-width: 300px;
 }

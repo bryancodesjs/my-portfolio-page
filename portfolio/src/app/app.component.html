@@ -1,4 +1,4 @@
-<header>
+<header class="animate__animated animate__fadeIn">
   <!-- navbar -->
   <section class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -10,13 +10,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="navitems">
           <ul class="navbar-nav mb-2 mb-lg-0"> <!-- me-auto -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Servicios</a>
+              <a class="nav-link" (click)="scrollTo('services')">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Trabajos</a>
+              <a class="nav-link" (click)="scrollTo('workhistory')">Trabajos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre mi</a>
+              <a class="nav-link" (click)="scrollTo('aboutme')">Sobre mi</a>
             </li>
           </ul>
         </div>
@@ -24,42 +24,50 @@
     </nav>
   </section>
   <!-- hero -->
-  <section class="container pt-5 pb-5">
+  <section id="hero" class="container pt-5 pb-5">
     <div class="row no-m-p3">
       <div class="col-lg-6 d-flex flex-column justify-content-center">
-        <div class="content">
+        <div class="content copy animate__animated animate__slideInUp">
           <h1 class="brand-font"><strong>Tu experto en diseño web</strong></h1>
           <p class="mb-0">Agenda una llamada estrategia de 15-20 minutos</p>
           <p>(sin costo ni compromiso)</p>
           <br>
           <div class="d-flex flex-wrap">
-            <a class="btn btn-primary --mr d-flex align-items-center">Hablemos de tu proyecto <i class="ri-whatsapp-line"></i></a>
+            <a (click)="navigateTo('whatsapp')" class="btn btn-primary --mr d-flex align-items-center">Hablemos de tu proyecto <i class="ri-whatsapp-line"></i></a>
             <small class="mt-2 text-muted">(Normalmente contesto en menos de 1 hora)</small>
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="content">
+      <div class="col-lg-6 ">
+        <div class="content animate__animated animate__slideInUp image">
           <img class="heroimg w-100" src="assets/img/ipad.png" alt="image of an ipad showing a website design">
         </div>
       </div>
     </div>
-    <div class="row no-m-p3">
-      <h6 class="text-center">Implementando las mejores prácticas y frameworks</h6>
+    <div class="row no-m-p3 animate__animated animate__fadeIn tech-wrap">
+      <h6 class="text-center">Utilizando las mejores herramientas y frameworks</h6>
       <div class="d-flex justify-content-center">
         <div class="content">
-          <ul class="d-flex flex-wrap mt-3 technologies">
-            <li><img src="assets/img/html.svg" alt=""></li>
-            <li><img src="assets/img/css.svg" alt=""></li>
-            <li><img src="assets/img/js.svg" alt=""></li>
-            <li><img src="assets/img/typescript.svg" alt=""></li>
-            <li><img src="assets/img/angular.svg" alt=""></li>
-            <li><img src="assets/img/react.svg" alt=""></li>
-            <li><img src="assets/img/git-icon.svg" alt=""></li>
-            <li><img src="assets/img/bootstrap-5-1.svg" alt=""></li>
-            <li><img src="assets/img/figma-1.svg" alt=""></li>
-            <li><img src="assets/img/illustrator.svg" alt=""></li>
-            <li><img src="assets/img/firebase.svg" alt=""></li>
+          <ul class="d-flex flex-wrap justify-content-center mt-3 technologies">
+            <li><img src="assets/img/html.svg" alt="html 5 logo" title="html 5"></li>
+            <li><img src="assets/img/css.svg" alt="css 3 logo" title="css 3"></li>
+            <li><img src="assets/img/js.svg" alt="javascript logo" title="javascript ES6"></li>
+            <li><img src="assets/img/typescript.svg" alt="typescript logo" title="typescript"></li>
+            <li><img src="assets/img/angular.svg" alt="angular logo" title="angular"></li>
+            <li><img src="assets/img/react.svg" alt="reactjs logo" title="react"></li>
+            <li><img src="assets/img/git-icon.svg" alt="git logo" title="git"></li>
+            <li><img src="assets/img/bootstrap-5-1.svg" alt="bootstrap 5 logo" title="bootstrap 5"></li>
+            <li><img src="assets/img/figma-1.svg" alt="figma logo" title="figma"></li>
+            <li><img src="assets/img/photoshop.svg" alt="adobe photoshop logo" title="adobe photoshop"></li>
+            <li><img src="assets/img/illustrator.svg" alt="adobe illustrator logo" title="adobe illustrator"></li>
+            <li><img src="assets/img/firebase.svg" alt="firebase logo" title="firebase"></li>
+            <li><img src="assets/img/net.svg" alt="asp.net logo" title=".net MVC"></li>
+            <li><img src="assets/img/wordpress.svg" alt="wordpress logo" title="wordpress"></li>
+            <li><img src="assets/img/elementor.svg" alt="elementor logo" title="Elementor"></li>
+            <li><img src="assets/img/shopify.svg" alt="shopify logo" title="Shopify"></li>
+            <li><img src="assets/img/filmora.svg" alt="filmora logo" title="Wondershare Filmora"></li>
+            <li><img src="assets/img/vscode.svg" alt="visual studio code's logo" title="Visual Studio Code"></li>
+            <li><img src="assets/img/github.svg" alt="github logo" title="Github"></li>
           </ul>
         </div>
       </div>
@@ -68,7 +76,7 @@
 </header>
 
 <!-- services section -->
-<section id="services" class="container-fluid pt-5 pb-5 accent-light-bg">
+<section id="services" class="container-fluid pt-5 pb-5 accent-light-bg animate__animated animate__fadeIn">
   <div class="container column no-m-p3">
     <div class="text-center">
       <h6 class="mb-3 text-uppercase text-accent">Servicios</h6>
@@ -92,7 +100,7 @@
 </section>
 
 <!-- work -->
-<section id="workhistory" class="container-fluid pt-5 pb-5 light-bg">
+<section id="workhistory" class="container-fluid pt-5 pb-5 light-bg animate__animated animate__fadeIn">
   <div class="column container no-m-p3">
     <div class="text-center">
       <h6 class="mb-3 text-uppercase text-accent">Trabajos</h6>
@@ -100,7 +108,7 @@
     </div>
     <div class="row grid mt-5">
       <div class="grid-item" *ngFor="let i of trabajos">
-        <div class="card w-100" >
+        <div class="card w-100" (click)="toggleModal(i)">
           <img [src]=" 'assets/img/work/' + i.imagen + '.jpg' " class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{i.trabajo}}</h5>
@@ -114,7 +122,7 @@
 </section>
 
 <!-- about me -->
-<section id="aboutme" class="container-fluid pt-5 pb-5 light-bg">
+<section id="aboutme" class="container-fluid pt-5 pb-5 light-bg animate__animated animate__fadeIn">
   <div class="column container no-m-p3">
     <div class="text-center">
       <h6 class="mb-3 text-uppercase text-accent">Sobre mi</h6>
@@ -165,15 +173,15 @@
       </div>
       <div class="col-lg-3 mb-4">
         <h5 class="mb-3">Referencias</h5>
-        <a href="" class="btn dark-btn mb-2 d-flex align-items-center">LinkedIn <i class="ri-linkedin-box-fill"></i></a>
-        <a href="" class="btn dark-btn d-flex align-items-center">Github <i class="ri-github-fill"></i></a>
+        <a (click)="navigateTo('linkedin')" class="btn dark-btn mb-2 d-flex align-items-center">LinkedIn <i class="ri-linkedin-box-fill"></i></a>
+        <a (click)="navigateTo('github')" class="btn dark-btn d-flex align-items-center">Github <i class="ri-github-fill"></i></a>
         <!-- <a href="" class="btn dark-btn mb-2">Stack Overflow</a> -->
       </div>
       <div class="col-lg-3">
         <h5 class="mb-3">Contacto</h5>
-        <a href="" class="btn dark-btn mb-2 d-flex align-items-center">Whatsapp <i class="ri-whatsapp-fill"></i></a>
-        <a href="" class="btn dark-btn mb-2 d-flex align-items-center">Email <i class="ri-mail-fill"></i></a>
-        <a href="" class="btn dark-btn mb-2 d-flex align-items-center">Instagram <i class="ri-instagram-fill"></i></a>
+        <a (click)="navigateTo('whatsapp')" class="btn dark-btn mb-2 d-flex align-items-center">Whatsapp <i class="ri-whatsapp-fill"></i></a>
+        <a (click)="navigateTo('email')" class="btn dark-btn mb-2 d-flex align-items-center">Email <i class="ri-mail-fill"></i></a>
+        <a (click)="navigateTo('instagram')" class="btn dark-btn mb-2 d-flex align-items-center">Instagram <i class="ri-instagram-fill"></i></a>
       </div>
     </div>
     <!-- firma -->
@@ -182,3 +190,21 @@
     </div>
   </div>
 </footer>
+
+<!-- preview modal -->
+<div class="modal fade" id="previewmodal" aria-hidden="true" aria-labelledby="previewmodal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered animate__animated animate__fadeIn">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{workOnModal.trabajo}}</h5>
+        <button (click)="toggleModal('')" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          {{workOnModal.descripcion}}.
+        </p>
+        <img class="w-100 preview-img border" loading="lazy" [src]=" 'assets/img/work/' + workOnModal.preview " alt="Preview image of a website designed by Bryan">
+      </div>
+    </div>
+  </div>
+</div>

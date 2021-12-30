@@ -1,0 +1,21 @@
+#hero {
+    .copy{
+        animation-duration: 1s !important;
+        animation-delay: 0s !important;
+    }
+    .image {
+        animation-duration: 1s !important;
+        animation-delay: 0.2s !important;
+    }
+}
+.tech-wrap {
+    animation-duration: 1s !important;
+    animation-delay: 0.4s !important;
+}
+#previewmodal {
+    background-color: #0c0020ed;
+    
+    .preview-img {
+        border-radius: 10px;
+    }
+}
