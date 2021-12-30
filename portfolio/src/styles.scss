@@ -1,6 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+//Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,700&family=Raleway:ital,wght@0,700;1,700&display=swap');
-
+//remixicons icon pack
+@import url('../node_modules/remixicon/fonts/remixicon.css');
 //variables
 $main-font-family: Poppins;
 $brand-font-family: Raleway;
@@ -44,6 +45,9 @@ p {
 .--mr {
     margin-right: 1rem;
 }
+.--mr-half {
+    margin-right: 0.5rem;
+}
 .content ul {
     list-style: none;
     margin: 0;
@@ -56,19 +60,84 @@ p {
         height: 58px;
     }
 }
-
-#services img {
-    width: 90px;
-    height: 90px;
+a i {
+    font-size: 140%;
+    margin-left: 0.5rem;
 }
-#workhistory .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem;
+.btn {
+    width: max-content;
+}
+#services {
+    .service {
+        transition: 0.5s ease-out;
+        border-radius: 10px;
+        &:hover {
+            background-color: darken($color: $accent-color-light, $amount: 2%);
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+    }
+    img {
+        width: 90px;
+        height: 90px;
+    }
+}
+#workhistory {
+    .grid-item {
+        .card {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1rem;
+    }
 }
 .accent-light-bg {
     background-color: $accent-color-light;
 }
 .light-bg {
     background-color: $light-background;
+}
+.text-accent {
+    color: $accent-color;
+}
+.dark-accent-bg {
+    background-color: darken($color: $accent-color, $amount: 40%);
+}
+footer {
+    h5 {
+        color:$accent-color-light;
+    }
+    a {
+        color: $accent-color-light;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            color: $accent-color-light;
+        }
+    }
+    small {
+        color: $accent-color-light;
+        opacity: 0.3;
+    }
+}
+.dark-btn {
+    transition: 0.5s ease-out;
+    color: #f8f8fa !important;
+    text-decoration: none !important;
+    &:hover {
+        background-color: #331c5b !important;
+        transition: 0.3s ease;
+    }
+}
+.btn-primary {
+    background-color: $accent-color !important;
+    border: 1px solid $accent-color !important;
+    &:hover {
+        background-color: lighten($color: $accent-color, $amount: 5%) !important;
+    }
 }

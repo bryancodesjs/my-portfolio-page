@@ -59,7 +59,7 @@ export class AppComponent {
     {
       trabajo: 'Riide Travel Services',
       imagen: 'riide',
-      descripcion: 'Migración de Wordpress a Angular y reestilización de una pagina web servicios de transporte'
+      descripcion: 'Migración de Wordpress a Angular y reestilización de una pagina web de servicios de transporte'
     },
     {
       trabajo: 'Xtron Online',

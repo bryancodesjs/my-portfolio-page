@@ -3,23 +3,20 @@
   <section class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><strong>BryanCampos</strong></a>
+        <a class="navbar-brand" href="#"><strong>Bryan<span class="text-accent">Campos</span></strong></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navitems" aria-controls="navitems" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navitems">
           <ul class="navbar-nav mb-2 mb-lg-0"> <!-- me-auto -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Sobre Mi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Soluciones</a>
+              <a class="nav-link" href="#">Servicios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Trabajos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">English</a>
+              <a class="nav-link" href="#">Sobre mi</a>
             </li>
           </ul>
         </div>
@@ -36,8 +33,8 @@
           <p>(sin costo ni compromiso)</p>
           <br>
           <div class="d-flex flex-wrap">
-            <a class="btn btn-primary --mr">Contactar Via Whatsapp</a>
-            <a class="btn btn-outline-primary">Agendar Videollamada</a>
+            <a class="btn btn-primary --mr d-flex align-items-center">Hablemos de tu proyecto <i class="ri-whatsapp-line"></i></a>
+            <small class="mt-2 text-muted">(Normalmente contesto en menos de 1 hora)</small>
           </div>
         </div>
       </div>
@@ -74,15 +71,15 @@
 <section id="services" class="container-fluid pt-5 pb-5 accent-light-bg">
   <div class="container column no-m-p3">
     <div class="text-center">
-      <h6 class="mb-3">Servicios</h6>
-      <h3>Las soluciones de desarrollo incluyen <span class="accent"><strong>1 año de soporte</strong></span></h3>
+      <h6 class="mb-3 text-uppercase text-accent">Servicios</h6>
+      <h3>Las soluciones de desarrollo incluyen <span class="text-accent"><strong>1 año de soporte</strong></span></h3>
       <p>Asi puedes enfocarte 100% en tus tareas del dia a dia sabiendo
         que tu app está operando 24/7
       </p>
     </div>
     <div class="row mt-5">
       <div class="col-md-6 col-lg-4 " *ngFor="let i of servicios">
-        <div class="d-flex">
+        <div class="d-flex service">
           <img class="p-3" [src]=" 'assets/img/services/' + i.icon + '.png' " alt="">
           <div class="text-left p-3">
             <h5 class="mb-0">{{i.servicio}}</h5>
@@ -98,7 +95,7 @@
 <section id="workhistory" class="container-fluid pt-5 pb-5 light-bg">
   <div class="column container no-m-p3">
     <div class="text-center">
-      <h6 class="mb-3">Trabajo</h6>
+      <h6 class="mb-3 text-uppercase text-accent">Trabajos</h6>
       <h3>Proyectos Recientes</h3>
     </div>
     <div class="row grid mt-5">
@@ -115,3 +112,73 @@
     </div>
   </div>
 </section>
+
+<!-- about me -->
+<section id="aboutme" class="container-fluid pt-5 pb-5 light-bg">
+  <div class="column container no-m-p3">
+    <div class="text-center">
+      <h6 class="mb-3 text-uppercase text-accent">Sobre mi</h6>
+      <h3>Bryan Campos</h3>
+    </div>
+    <div class="row mt-5">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="content">
+              <div class="profile-pic rounded-circle overflow-hidden">
+                <img class="w-100" src="assets/img/bryan-campos.jfif" alt="profile picture of Bryan Campos">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <h5>Front-end Developer / UI Designer</h5>
+            <p>
+              Hola! Soy Bryan, un desarrollador front-end apasionado por el diseño de interfaces de usuario (UI) perfectas. 
+            </p>
+            <p>
+              Aveces, desarrollar una idea puede ser agotador o confuso, hay mucho que hacer, quieres que tu web quede perfecta y no siempre tienes claro por donde empezar. Lo se, lo he vivido cientos de veces. Por eso estoy aqui, para ayudarte a simplificar el proceso y lograr una web que tanto tu como tus clientes disfruten.
+            </p>
+            <p>¡Hablemos sobre tu proyecto!</p>
+            <div class="d-flex">
+              <a class="btn btn-primary d-flex align-items-center"><span>Hablemos de tu proyecto</span> <i class="ri-whatsapp-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="dark-accent-bg">
+  <div class="container pt-5 pb-5">
+    <div class="row no-m-p3">
+      <div class="col-lg-3 mb-4">
+        <h5 class="mb-3">Bryan Campos</h5>
+        <small>Front-end Developer & UI Designer</small>
+      </div>
+      <div class="col-lg-3 mb-4">
+        <h5 class="mb-3">Enlaces</h5>
+        <p><a href="">Soluciones</a></p>
+        <p><a href="">Trabajos</a></p>
+        <p><a href="">Sobre mi</a></p>
+      </div>
+      <div class="col-lg-3 mb-4">
+        <h5 class="mb-3">Referencias</h5>
+        <a href="" class="btn dark-btn mb-2 d-flex align-items-center">LinkedIn <i class="ri-linkedin-box-fill"></i></a>
+        <a href="" class="btn dark-btn d-flex align-items-center">Github <i class="ri-github-fill"></i></a>
+        <!-- <a href="" class="btn dark-btn mb-2">Stack Overflow</a> -->
+      </div>
+      <div class="col-lg-3">
+        <h5 class="mb-3">Contacto</h5>
+        <a href="" class="btn dark-btn mb-2 d-flex align-items-center">Whatsapp <i class="ri-whatsapp-fill"></i></a>
+        <a href="" class="btn dark-btn mb-2 d-flex align-items-center">Email <i class="ri-mail-fill"></i></a>
+        <a href="" class="btn dark-btn mb-2 d-flex align-items-center">Instagram <i class="ri-instagram-fill"></i></a>
+      </div>
+    </div>
+    <!-- firma -->
+    <div class="row no-m-p3 text-center">
+      <small>Diseñado y desplegado por Bryan C.</small>
+    </div>
+  </div>
+</footer>
