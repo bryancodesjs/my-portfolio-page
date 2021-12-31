@@ -119,6 +119,13 @@ export class AppComponent {
         break;
       case 'email':
         window.location.href = "mailto:bcampos100k@gmail.com";
+        break;
+      case 'agenda':
+        window.location.href = "https://bryancamposwebdesignampdevelopment.setmore.com/bookappointment";
+        break;
+      default:
+        window.location.href = "https://bryancampos.netlify.com";
+        break;
 
     }
   }

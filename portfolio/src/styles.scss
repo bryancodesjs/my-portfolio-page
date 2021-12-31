@@ -129,7 +129,7 @@ a i {
     background-color: darken($color: $accent-color, $amount: 40%);
 }
 footer {
-    h5 {
+    h5, p {
         color:$accent-color-light;
     }
     a {
@@ -139,6 +139,10 @@ footer {
             text-decoration: underline;
             color: $accent-color-light;
         }
+    }
+    p a:hover {
+        color: $accent-color !important;
+        cursor: pointer;
     }
     small {
         color: $accent-color-light;
@@ -159,6 +163,11 @@ footer {
     border: 1px solid $accent-color !important;
     &:hover {
         background-color: lighten($color: $accent-color, $amount: 5%) !important;
+    }
+}
+.btn-transparent {
+    &:hover {
+        color: $accent-color !important;
     }
 }
 .profile-pic {
