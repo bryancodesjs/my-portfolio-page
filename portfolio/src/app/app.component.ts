@@ -19,42 +19,42 @@ export class AppComponent {
   servicios = [
     {
       servicio: 'Wireframing',
-      descripcion: 'Esquematización de proyectos',
+      descripcion: 'Production of interactive wireframes and flows using Balsamiq',
       icon: 'wireframing'
     },
     {
-      servicio: 'Diseño de Mocks',
-      descripcion: 'Diseño e ilustración de mocks en .PSD y Figma',
+      servicio: 'Prototype Design',
+      descripcion: 'Plan and design of high-fidelity mockups and prototypes using Figma +/ Photoshop',
       icon: 'mockup'
     },
     {
-      servicio: 'Reestilización',
-      descripcion: 'Renueva tu página o aplicación web',
+      servicio: 'Website Restyling',
+      descripcion: 'Partially/Completelly modify your current site/app.',
       icon: 'restyle'
     },
     {
-      servicio: 'Wordpress',
-      descripcion: 'Desarrollo y mantenimiento para tu sitio en Wordpress',
+      servicio: 'WordPress',
+      descripcion: 'Develop/Maintain/Modify a WordPress site',
       icon: 'wordpress'
     },
     {
       servicio: 'Shopify',
-      descripcion: 'Crea tu tienda en linea en Shopify en 24 horas',
+      descripcion: 'Design and deploy your own Shopify store in 24 hours',
       icon: 'shopify'
     },
     {
       servicio: 'CRM',
-      descripcion: 'Crea un dashboard único para manejar tu negocio',
+      descripcion: 'Design and Develop a custom Content Management System to manage your business',
       icon: 'dashboard'
     },
     {
-      servicio: 'Página Web Express',
-      descripcion: 'Crea una página web para mostrar tu negocio, servicios y contacto',
+      servicio: 'Express Website',
+      descripcion: 'Design and create a one-page website to show your business, services and contact information',
       icon: 'website'
     },
     {
       servicio: 'Enterprise',
-      descripcion: 'Crea una aplicación web compleja y personalizada',
+      descripcion: 'Create a complex and custom web app to match all your requirements',
       icon: 'enterprise'
     }
   ]
@@ -62,43 +62,43 @@ export class AppComponent {
     {
       trabajo: 'Autogenio',
       imagen: 'autogenio',
-      descripcion: 'Diseño en Figma para una app de venta de vehiculos',
+      descripcion: 'UI Design of a website for a car sales company',
       preview: 'preview-autogenio.webp'
     },
     {
       trabajo: 'Riide Travel Services',
       imagen: 'riide',
-      descripcion: 'Migración de Wordpress a Angular y reestilización de una pagina web de servicios de transporte',
+      descripcion: 'Redesign and migration of private transportation website from WordPress to Angular 12',
       preview: 'preview-riide.webp'
     },
     {
       trabajo: 'Xtron Online',
       imagen: 'xtron',
-      descripcion: 'Sistema de membresías basado en la blockchain de tron desarrollado en React',
+      descripcion: 'Design and development (React) of a MLM Web3 app based on the Tron blockchain',
       preview: 'preview-xtron.webp'
     },
     {
-      trabajo: 'Gestion de Prestamos',
+      trabajo: 'Loan Management System',
       imagen: 'prestamos',
-      descripcion: 'Desarrollo en Angular de CRM para solicitud y gestión de prestamos',
+      descripcion: 'Design and development of a custom loan management system for a credit firm',
       preview: 'preview-prestamos.webp'
     },
     {
-      trabajo: 'Academia Online',
+      trabajo: 'Online Academy',
       imagen: 'academy',
-      descripcion: 'Diseño en Figma de app para clases en linea inspirado en Udemy',
+      descripcion: 'UI Design for an online academy startup inspired on Udemy',
       preview: 'preview-academy.webp'
     },
     {
-      trabajo: 'Gestion de Expedientes',
+      trabajo: 'Investigation Records Management',
       imagen: 'expedientes',
-      descripcion: 'Desarrollo de App local para gestión de expedientes en .NET MVC',
+      descripcion: 'Design and development (.NET MVC) of a complex CRM for managing investigation records',
       preview: 'privacy.webp'
     },
     {
       trabajo: 'Sembradores',
       imagen: 'sembradores',
-      descripcion: 'Sistema MLM de membresías desarrollado en .NET MVC',
+      descripcion: 'Design and development (.NET MVC) of a MLM web app with Coinpayments API integration',
       preview: 'preview-sembradores.webp'
     },
   ]

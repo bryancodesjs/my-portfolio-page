@@ -10,13 +10,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="navitems">
           <ul class="navbar-nav mb-2 mb-lg-0"> <!-- me-auto -->
             <li class="nav-item">
-              <a class="nav-link" (click)="scrollTo('services')">Servicios</a>
+              <a class="nav-link" (click)="scrollTo('services')">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" (click)="scrollTo('workhistory')">Trabajos</a>
+              <a class="nav-link" (click)="scrollTo('workhistory')">Previous work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" (click)="scrollTo('aboutme')">Sobre mi</a>
+              <a class="nav-link" (click)="scrollTo('aboutme')">About me</a>
             </li>
           </ul>
         </div>
@@ -28,13 +28,13 @@
     <div class="row no-m-p3">
       <div class="col-lg-6 d-flex flex-column justify-content-center">
         <div class="content copy animate__animated animate__slideInUp">
-          <h1 class="brand-font"><strong>Te ayudo a crear sitios web increibles</strong></h1>
-          <p class="mb-0"><strong>¡Deseo escucharte!</strong> Contactame via Whatsapp o agenda una reunion estrategia de 15-20 minutos</p>
-          <p>(sin costo ni compromiso)</p>
+          <h1 class="brand-font"><strong>I help you design and create amazing websites</strong></h1>
+          <p class="mb-3 mt-4"><strong>I want to hear you!</strong> Reach me out via WhatsApp or book a 15-min strategy call</p>
+          <!-- <p>(no cost)</p> -->
           <br>
           <div class="d-flex flex-wrap">
-            <a (click)="navigateTo('whatsapp')" class="btn btn-primary --mr d-flex align-items-center mb-3">Hablemos de tu proyecto <i class="ri-whatsapp-line"></i></a>
-            <a (click)="navigateTo('agenda')" class="btn btn-transparent --mr d-flex align-items-center mb-3">Agendar videollamada </a>
+            <a (click)="navigateTo('whatsapp')" class="btn btn-primary --mr d-flex align-items-center mb-3">Let's talk about your project <i class="ri-whatsapp-line"></i></a>
+            <a (click)="navigateTo('agenda')" class="btn btn-transparent --mr d-flex align-items-center mb-3">Book a video conference </a>
 
             <!-- <small class="mt-2 text-muted">(Normalmente contesto en menos de 1 hora)</small> -->
           </div>
@@ -47,7 +47,7 @@
       </div>
     </div>
     <div class="row no-m-p3 animate__animated animate__fadeIn tech-wrap">
-      <h6 class="text-center">Utilizando las mejores herramientas y frameworks</h6>
+      <h6 class="text-center">Using the best tools and frameworks</h6>
       <div class="d-flex justify-content-center">
         <div class="content">
           <ul class="d-flex flex-wrap justify-content-center mt-3 technologies">
@@ -84,10 +84,9 @@
 <section id="services" class="container-fluid pt-5 pb-5 accent-light-bg animate__animated animate__fadeIn">
   <div class="container column no-m-p3">
     <div class="text-center">
-      <h6 class="mb-3 text-uppercase text-accent">Servicios</h6>
-      <h3>Las soluciones de desarrollo incluyen <span class="text-accent"><strong>1 año de soporte</strong></span></h3>
-      <p>Asi puedes enfocarte 100% en tus tareas del dia a dia sabiendo
-        que tu app está operando 24/7
+      <h6 class="mb-3 text-uppercase text-accent">SERVICES</h6>
+      <h3>All the development solutions include a <span class="text-accent"><strong>12-month support period</strong></span></h3>
+      <p>So you can focus 100% of your energy on running your project with ease of mind
       </p>
     </div>
     <div class="row mt-5">
@@ -108,8 +107,8 @@
 <section id="workhistory" class="container-fluid pt-5 pb-5 light-bg animate__animated animate__fadeIn">
   <div class="column container no-m-p3">
     <div class="text-center">
-      <h6 class="mb-3 text-uppercase text-accent">Trabajos</h6>
-      <h3>Proyectos Recientes</h3>
+      <h6 class="mb-3 text-uppercase text-accent">PREVIOUS WORK</h6>
+      <h3>Most Recent Projects</h3>
     </div>
     <div class="row grid mt-5">
       <div class="grid-item" *ngFor="let i of trabajos">
@@ -130,7 +129,7 @@
 <section id="aboutme" class="container-fluid pt-5 pb-5 light-bg animate__animated animate__fadeIn">
   <div class="column container no-m-p3">
     <div class="text-center">
-      <h6 class="mb-3 text-uppercase text-accent">Sobre mi</h6>
+      <h6 class="mb-3 text-uppercase text-accent">About Me</h6>
       <h3>Bryan Campos</h3>
     </div>
     <div class="row mt-5">
@@ -146,14 +145,14 @@
           <div class="col-lg-8">
             <h5>Front-end Developer / UI Designer</h5>
             <p>
-              Hola! Soy Bryan, un desarrollador front-end apasionado por el diseño de interfaces de usuario (UI) perfectas. 
+              Hello! I'm Bryan, a front-end developer with a strong passion for building pixel-perfect and simple user interfaces.
             </p>
             <p>
-              Aveces, desarrollar una idea puede ser agotador o confuso, hay mucho que hacer, quieres que tu web quede perfecta y no siempre tienes claro por donde empezar. Lo se, lo he vivido cientos de veces. Por eso estoy aqui, para ayudarte a simplificar el proceso y lograr una web que tanto tu como tus clientes disfruten.
+              Sometimes, taking an idea and developing it into a customer-ready solution may seem like a mountain of work: there's so much to do and the starting point isn't always clear. It's fine, I know it. I've been there hundreds of times; that's why I'm here. I help entrepreneurs, teams and companies turn ideas into beautifully crafted (and simple-to-use) web applications.
             </p>
-            <p>¡Hablemos sobre tu proyecto!</p>
+            <p>I'm excited to talk about your project!</p>
             <div class="d-flex">
-              <a class="btn btn-primary d-flex align-items-center"><span>Hablemos de tu proyecto</span> <i class="ri-whatsapp-line"></i></a>
+              <a class="btn btn-primary d-flex align-items-center"><span>Let's start a conversation</span> <i class="ri-whatsapp-line"></i></a>
             </div>
           </div>
         </div>
@@ -172,18 +171,18 @@
       </div>
       <div class="col-lg-3 mb-4">
         <h5 class="mb-3">Enlaces</h5>
-        <p><a (click)="scrollTo('services')">Soluciones</a></p>
-        <p><a (click)="scrollTo('workhistory')">Trabajos</a></p>
-        <p><a (click)="scrollTo('aboutme')">Sobre mi</a></p>
+        <p><a (click)="scrollTo('services')">Services</a></p>
+        <p><a (click)="scrollTo('workhistory')">Previous Work</a></p>
+        <p><a (click)="scrollTo('aboutme')">About Me</a></p>
       </div>
       <div class="col-lg-3 mb-4">
-        <h5 class="mb-3">Referencias</h5>
+        <h5 class="mb-3">References</h5>
         <a (click)="navigateTo('linkedin')" class="btn dark-btn mb-2 d-flex align-items-center">LinkedIn <i class="ri-linkedin-box-fill"></i></a>
         <a (click)="navigateTo('github')" class="btn dark-btn d-flex align-items-center">Github <i class="ri-github-fill"></i></a>
         <!-- <a href="" class="btn dark-btn mb-2">Stack Overflow</a> -->
       </div>
       <div class="col-lg-3">
-        <h5 class="mb-3">Contacto</h5>
+        <h5 class="mb-3">Contact</h5>
         <a (click)="navigateTo('whatsapp')" class="btn dark-btn mb-2 d-flex align-items-center">Whatsapp <i class="ri-whatsapp-fill"></i></a>
         <a (click)="navigateTo('email')" class="btn dark-btn mb-2 d-flex align-items-center">Email <i class="ri-mail-fill"></i></a>
         <a (click)="navigateTo('instagram')" class="btn dark-btn mb-2 d-flex align-items-center">Instagram <i class="ri-instagram-fill"></i></a>
@@ -191,7 +190,7 @@
     </div>
     <!-- firma -->
     <div class="row no-m-p3 text-center">
-      <small>Diseñado y desplegado por Bryan C.</small>
+      <small>Designed and deployed by me :D (2022)</small>
     </div>
   </div>
 </footer>
