@@ -60,6 +60,12 @@ export class AppComponent {
   ]
   trabajos = [
     {
+      trabajo: 'Creative Directory',
+      imagen: 'directorio-creativo',
+      descripcion: 'Development of Design System for the first government-backed freelance directory in the Dominican Republic.',
+      preview: 'preview-directorio-creativo.webp'
+    },
+    {
       trabajo: 'Autogenio',
       imagen: 'autogenio',
       descripcion: 'UI Design of a website for a car sales company',
