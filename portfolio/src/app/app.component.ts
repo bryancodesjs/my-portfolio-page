@@ -8,14 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'portfolio';
 
-  // I'll use this empty array to store the portfolio item the user cliks on
+  // I'll use this empty array to store in memory the details of a portfolio item a user cliks on
+  // so when the preview modal shows, it will take the info of the item in this array
   workOnModal = {
     trabajo: '',
     imagen: '',
     preview: '',
-    descripcion: ''
+    descripcion: '',
+    skills: []
   };
 
+  //List of Freelance services offered
   servicios = [
     {
       servicio: 'Wireframing',
@@ -58,12 +61,18 @@ export class AppComponent {
       icon: 'enterprise'
     }
   ]
+  
+  //Portfolio Items
   trabajos = [
     {
       trabajo: 'Creative Directory',
       imagen: 'directorio-creativo',
-      descripcion: 'Development of Design System for the first government-backed freelance directory in the Dominican Republic.',
-      preview: 'preview-directorio-creativo.webp'
+      descripcion: 'Development of a Design System for the first government-backed freelance directory in the Dominican Republic',
+      preview: 'preview-directorio-creativo.webp',
+      skills: [
+        "figma",
+        "typescale"
+      ]
     },
     {
       trabajo: 'Autogenio',
@@ -109,6 +118,7 @@ export class AppComponent {
     },
   ]
 
+  //This function triggers a redirect to the specified URL
   navigateTo(sitename: string) {
     switch(sitename) {
       case 'linkedin':
@@ -136,20 +146,29 @@ export class AppComponent {
     }
   }
 
-  //toggle preview modal
+  //This function hides/shows the item preview modal
   toggleModal(work: any){
-    console.log(work);
+    //console.log(work);
+
+    //assigns the values of the clicked item to the workOnModal array
     this.workOnModal = work;
+
+    //if the preview modal is showing then...
     if( (document.getElementById('previewmodal') as HTMLElement).className == 'modal fade show d-block') {
+      //let's hide it
       (document.getElementById('previewmodal') as HTMLElement).className = 'modal fade';
+      //and delete all classes from the body node
       (document.getElementById('body') as HTMLElement).className = '';
-    } else {
+    } else { 
+      //if the preview modal is not showing, then...
+      //add these cute classes to it
       (document.getElementById('previewmodal') as HTMLElement).className = 'modal fade show d-block';
+      //and let's stop all this scrolling on the body node
       (document.getElementById('body') as HTMLElement).className = 'overflow-hidden';
     }
   }
 
-  //scroll to anchor position
+  //scroll to anchor position which is passed to the function
   scrollTo(element: any): void {
     (document.getElementById(element) as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }

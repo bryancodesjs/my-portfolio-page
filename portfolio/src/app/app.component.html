@@ -91,7 +91,7 @@
     </div>
     <div class="row mt-5">
       <div class="col-md-6 col-lg-4 " *ngFor="let i of servicios">
-        <div class="d-flex service">
+        <div class="d-flex flex-wrap service">
           <img class="p-3" [src]=" 'assets/img/services/' + i.icon + '.png' " alt="">
           <div class="text-left p-3">
             <h5 class="mb-0">{{i.servicio}}</h5>
@@ -117,7 +117,6 @@
           <div class="card-body">
             <h5 class="card-title">{{i.trabajo}}</h5>
             <p class="card-text">{{i.descripcion}}</p>
-            
           </div>
         </div>
       </div>
@@ -200,14 +199,24 @@
   <div class="modal-dialog modal-lg modal-dialog-centered animate__animated animate__fadeIn">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">{{workOnModal.trabajo}}</h5>
+        <h4 class="modal-title">{{workOnModal.trabajo}}</h4>
         <button (click)="toggleModal('')" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>
-          {{workOnModal.descripcion}}.
-        </p>
-        <img class="w-100 preview-img border" loading="lazy" [src]=" 'assets/img/work/' + workOnModal.preview " alt="Preview image of a website designed by Bryan">
+        <div class="mb-4 mt-3">
+          <h5>Project Summary</h5>
+          <p>{{workOnModal.descripcion}}.</p>
+        </div>
+        <div class="mb-5">
+          <h5>Skills and tools I used in this project</h5>
+          <ul class="skill-list mt-1">
+            <li class="skill-list_badge text-capitalize" *ngFor="let skill of workOnModal.skills">{{skill}}</li>
+          </ul>
+        </div>
+        <div>
+          <h5>Project Snapshot</h5>
+          <img class="w-100 preview-img border" loading="lazy" [src]=" 'assets/img/work/' + workOnModal.preview " alt="Preview image of a website designed by Bryan">
+        </div>
       </div>
     </div>
   </div>
