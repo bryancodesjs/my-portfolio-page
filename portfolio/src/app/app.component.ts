@@ -15,7 +15,10 @@ export class AppComponent {
     imagen: '',
     preview: '',
     descripcion: '',
-    skills: []
+    skills: [],
+    figmaLink: '',
+    githubLink: '',
+    itemWebsite: ''
   };
 
   //List of Freelance services offered
@@ -42,7 +45,7 @@ export class AppComponent {
     },
     {
       servicio: 'Shopify',
-      descripcion: 'Design and deploy your own Shopify store in 24 hours',
+      descripcion: 'Design and deploy your own Shopify store',
       icon: 'shopify'
     },
     {
@@ -70,52 +73,123 @@ export class AppComponent {
       descripcion: 'Development of a Design System for the first government-backed freelance directory in the Dominican Republic',
       preview: 'preview-directorio-creativo.webp',
       skills: [
+        "UX/UI Design",
         "figma",
         "typescale"
-      ]
+      ],
+      figmaLink: "https://www.figma.com/proto/ISDiJNDycHPaOqvknp9yJi/Directorio-Creativo?node-id=1%3A2",
+      githubLink: "none",
+      itemWebsite: "none"
     },
     {
       trabajo: 'Autogenio',
       imagen: 'autogenio',
-      descripcion: 'UI Design of a website for a car sales company',
-      preview: 'preview-autogenio.webp'
+      descripcion: 'UI Design for a car sales company\'s website',
+      preview: 'preview-autogenio.webp',
+      skills: [
+        "UX/UI Design",
+        "Angular 12",
+        "HTML",
+        "Bootstrap 5",
+        "SCSS",
+        "git",
+        "Photoshop"
+      ],
+      figmaLink: "none",
+      githubLink: "none",
+      itemWebsite: "none"
     },
     {
       trabajo: 'Riide Travel Services',
       imagen: 'riide',
       descripcion: 'Redesign and migration of private transportation website from WordPress to Angular 12',
-      preview: 'preview-riide.webp'
+      preview: 'preview-riide.webp',
+      skills: [
+        "UX/UI Design",
+        "Angular 12",
+        "HTML",
+        "Bootstrap 5",
+        "SCSS",
+        "git",
+        "Firebase"
+      ],
+      figmaLink: "none",
+      githubLink: "https://github.com/bryancodesjs/riide.git",
+      itemWebsite: "https://riidetravel.com"
     },
     {
       trabajo: 'Xtron Online',
       imagen: 'xtron',
       descripcion: 'Design and development (React) of a MLM Web3 app based on the Tron blockchain',
-      preview: 'preview-xtron.webp'
+      preview: 'preview-xtron.webp',
+      skills: [
+        "UX/UI Design",
+        "React",
+        "HTML",
+        "Bootstrap 4",
+        "CSS",
+        "git",
+        "Photoshop"
+      ],
+      figmaLink: "none",
+      githubLink: "none",
+      itemWebsite: "none"
     },
     {
       trabajo: 'Loan Management System',
       imagen: 'prestamos',
       descripcion: 'Design and development of a custom loan management system for a credit firm',
-      preview: 'preview-prestamos.webp'
+      preview: 'preview-prestamos.webp',
+      skills: [
+        "UX/UI Design",
+        "Figma",
+        "Illustrator",
+        "Angular 12",
+        "HTML",
+        "Bootstrap 5",
+        "SCSS",
+        "git"
+      ],
+      figmaLink: "none",
+      githubLink: "none",
+      itemWebsite: "none"
     },
     {
       trabajo: 'Online Academy',
       imagen: 'academy',
       descripcion: 'UI Design for an online academy startup inspired on Udemy',
-      preview: 'preview-academy.webp'
+      preview: 'preview-academy.webp',
+      skills: [
+        "UX/UI Design",
+        "Figma",
+        "Angular 12",
+        "HTML",
+        "Bootstrap 5",
+        "SCSS",
+        "git"
+      ],
+      figmaLink: "none",
+      githubLink: "https://github.com/bryancodesjs/academy.com",
+      itemWebsite: "none"
     },
     {
       trabajo: 'Investigation Records Management',
       imagen: 'expedientes',
-      descripcion: 'Design and development (.NET MVC) of a complex CRM for managing investigation records',
-      preview: 'privacy.webp'
-    },
-    {
-      trabajo: 'Sembradores',
-      imagen: 'sembradores',
-      descripcion: 'Design and development (.NET MVC) of a MLM web app with Coinpayments API integration',
-      preview: 'preview-sembradores.webp'
-    },
+      descripcion: 'Design and development (.NET MVC) of a web application for managing investigation records',
+      preview: 'privacy.webp',
+      skills: [
+        "UX/UI Design",
+        ".NET MVC",
+        "C#",
+        "HTML",
+        "Bootstrap 4",
+        "CSS",
+        "git"
+      ],
+      figmaLink: "none",
+      githubLink: "none",
+      itemWebsite: "none"
+    }
   ]
 
   //This function triggers a redirect to the specified URL
@@ -138,6 +212,15 @@ export class AppComponent {
         break;
       case 'agenda':
         window.location.href = "https://bryancamposwebdesignampdevelopment.setmore.com/bookappointment";
+        break;
+      case 'figma':
+        window.location.href = this.workOnModal.figmaLink;
+        break;
+      case 'githubItem':
+        window.location.href = this.workOnModal.githubLink;
+        break;
+      case 'itemWebsite':
+        window.location.href = this.workOnModal.itemWebsite;
         break;
       default:
         window.location.href = "https://bryancampos.netlify.com";

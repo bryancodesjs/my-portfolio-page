@@ -213,6 +213,25 @@
             <li class="skill-list_badge text-capitalize" *ngFor="let skill of workOnModal.skills">{{skill}}</li>
           </ul>
         </div>
+        <!-- If there is a Figma link or github link for this item, show this section -->
+        <div class="mb-5" *ngIf="workOnModal.figmaLink !='none'||workOnModal.githubLink !='none'||workOnModal.itemWebsite !='none' ">
+          <h5 class="mb-3">Inspect this project</h5>
+          <!-- if there is a Figma link, show this button -->
+          <a class="inspect-btn" (click)="navigateTo('figma')" *ngIf="workOnModal.figmaLink !='none' ">
+            <span><img src="../assets/img/figma-1.svg" alt="Figma icon"></span>
+            <span class="inspect-btn_text">View on Figma</span>
+          </a>
+          <!-- if there is a Github link, show this button -->
+          <a class="inspect-btn" (click)="navigateTo('githubItem')" *ngIf="workOnModal.githubLink !='none' ">
+            <span><img src="../assets/img/github.svg" alt="Github icon"></span>
+            <span class="inspect-btn_text">View on Github</span>
+          </a>
+          <!-- if there is a website link, show this button -->
+          <a class="inspect-btn" (click)="navigateTo('itemWebsite')" *ngIf="workOnModal.itemWebsite !='none' ">
+            <span><img src="../assets/img/global-line.svg" alt="World icon"></span>
+            <span class="inspect-btn_text">View live website</span>
+          </a>
+        </div>
         <div>
           <h5>Project Snapshot</h5>
           <img class="w-100 preview-img border" loading="lazy" [src]=" 'assets/img/work/' + workOnModal.preview " alt="Preview image of a website designed by Bryan">
