@@ -25,17 +25,17 @@ export class AppComponent {
   servicios = [
     {
       servicio: 'Wireframing',
-      descripcion: 'Production of interactive wireframes and flows using Balsamiq',
+      descripcion: 'Production of interactive wireframes and user-flows using Balsamiq',
       icon: 'wireframing'
     },
     {
       servicio: 'Prototype Design',
-      descripcion: 'Plan and design of high-fidelity mockups and prototypes using Figma +/ Photoshop',
+      descripcion: 'Plan, research and design of high-fidelity mockups and prototypes using Figma and Photoshop',
       icon: 'mockup'
     },
     {
       servicio: 'Website Restyling',
-      descripcion: 'Partially/Completelly modify your current site/app.',
+      descripcion: 'Partially/Completelly modify a website.',
       icon: 'restyle'
     },
     {
@@ -45,22 +45,22 @@ export class AppComponent {
     },
     {
       servicio: 'Shopify',
-      descripcion: 'Design and deploy your own Shopify store',
+      descripcion: 'Design and deploy a custom Shopify store',
       icon: 'shopify'
     },
     {
-      servicio: 'CRM',
-      descripcion: 'Design and Develop a custom Content Management System to manage your business',
+      servicio: 'CMS',
+      descripcion: 'Design and develop custom the Front-end of a Content Management Systems',
       icon: 'dashboard'
     },
     {
-      servicio: 'Express Website',
-      descripcion: 'Design and create a one-page website to show your business, services and contact information',
+      servicio: 'Express Websites',
+      descripcion: 'Design and create static websites and landing pages',
       icon: 'website'
     },
     {
       servicio: 'Enterprise',
-      descripcion: 'Create a complex and custom web app to match all your requirements',
+      descripcion: 'Design and development of complex/custom user interfaces',
       icon: 'enterprise'
     }
   ]

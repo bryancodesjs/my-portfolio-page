@@ -31,13 +31,14 @@
     <div class="row no-m-p3">
       <div class="col-lg-6 d-flex flex-column justify-content-center">
         <div class="content copy animate__animated animate__slideInUp">
-          <h1 class="brand-font"><strong>I help you design and create amazing websites</strong></h1>
-          <p class="mb-3 mt-4"><strong>I want to hear you!</strong> Reach me out via WhatsApp or book a 15-min strategy call</p>
+          <p class="text-accent"><strong>WELCOME TO MY WEBSITE</strong></p>
+          <h1 class="brand-font"><strong>I'm Bryan, a frontend developer obsessed about UI design and aesthetics.</strong></h1>
+          <h5 class="mb-3 mt-4">I believe web development is art. It's an opportunity to take users to an interesting experience.</h5>
           <!-- <p>(no cost)</p> -->
           <br>
           <div class="d-flex flex-wrap">
-            <a (click)="navigateTo('whatsapp')" class="btn btn-primary --mr d-flex align-items-center mb-3">Let's talk about your project <i class="ri-whatsapp-line"></i></a>
-            <a (click)="navigateTo('agenda')" class="btn btn-transparent --mr d-flex align-items-center mb-3">Book a video conference </a>
+            <a (click)="navigateTo('whatsapp')" class="btn btn-primary --mr d-flex align-items-center mb-3">Reach me on WhatsApp <i class="ri-whatsapp-line"></i></a>
+            <!-- <a (click)="navigateTo('agenda')" class="btn btn-transparent --mr d-flex align-items-center mb-3">Book a video conference </a> -->
 
             <!-- <small class="mt-2 text-muted">(Normalmente contesto en menos de 1 hora)</small> -->
           </div>
@@ -50,7 +51,7 @@
       </div>
     </div>
     <div class="row no-m-p3 animate__animated animate__fadeIn tech-wrap">
-      <h6 class="text-center">Using the best tools and frameworks</h6>
+      <h6 class="text-center">Using the best front-end skills and tools</h6>
       <div class="d-flex justify-content-center">
         <div class="content">
           <ul class="d-flex flex-wrap justify-content-center mt-3 technologies">
@@ -88,9 +89,8 @@
   <div class="container column no-m-p3">
     <div class="text-center">
       <h6 class="mb-3 text-uppercase text-accent">SERVICES</h6>
-      <h3>All the development solutions include a <span class="text-accent"><strong>12-month support period</strong></span></h3>
-      <p>So you can focus 100% of your energy on running your project with ease of mind
-      </p>
+      <h3>What I am best at</h3>
+      
     </div>
     <div class="row mt-5">
       <div class="col-md-6 col-lg-4 " *ngFor="let i of servicios">
@@ -99,7 +99,7 @@
           <div class="text-left p-3">
             <img class="mb-3" [src]=" 'assets/img/services/' + i.icon + '.png' " alt="">
             <h5 class="mb-0">{{i.servicio}}</h5>
-            <p>{{i.descripcion}}</p>
+            <p class="mb-0">{{i.descripcion}}</p>
           </div>
         </div>
       </div>
@@ -151,10 +151,14 @@
               Hello! I'm Bryan, a front-end developer with a strong passion for building pixel-perfect and simple user interfaces.
             </p>
             <p>
-              Sometimes, taking an idea and developing it into a customer-ready solution may seem like a mountain of work: there's so much to do and the starting point isn't always clear. It's fine, I know it. I've been there hundreds of times; that's why I'm here. I help entrepreneurs, teams and companies turn ideas into beautifully crafted (and simple-to-use) web applications.
+              Sometimes, taking an idea and developing it into a customer-ready 
+              solution may seem like a mountain of work: there's so much to do 
+              and the starting point isn't always clear. It's fine, I know it. 
+              I've been there hundreds of times; that's why I'm here: 
+              <strong>to help you turn ideas into beautifully crafted and user-friendly user interfaces.</strong>
             </p>
             <p>I'm excited to talk about your project!</p>
-            <div class="d-flex">
+            <div class="d-flex mt-4">
               <a class="btn btn-primary d-flex align-items-center"><span>Let's start a conversation</span> <i class="ri-whatsapp-line"></i></a>
             </div>
           </div>
