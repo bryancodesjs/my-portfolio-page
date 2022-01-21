@@ -1,7 +1,6 @@
 //Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,700&family=Raleway:ital,wght@0,700;1,700&display=swap');
-//remixicons icon pack
-@import url('../node_modules/remixicon/fonts/remixicon.css');
+
 //variables
 $main-font-family: Poppins;
 $brand-font-family: Raleway;
@@ -53,6 +52,9 @@ p {
             color: $accent-color !important;
         }
     }
+    .nav-link {
+        font-weight: 500;
+    }
 }
 .--mr-half {
     margin-right: 0.5rem;
@@ -94,6 +96,9 @@ a i {
 #workhistory {
     .grid-item {
         .card {
+            -webkit-box-shadow: 5px 5px 15px 9px rgb(224 213 231 / 25%);
+            box-shadow: 5px 5px 15px 9px rgb(224 213 231 / 25%);
+            border: none !important;
             transition: 0.5s ease-out;
             &:hover {
                 transition: 0.2s ease;
@@ -149,6 +154,12 @@ footer {
         opacity: 0.3;
     }
 }
+button {
+    transition: 0.2s ease !important;
+    &:hover {
+        transition: 0.2s ease !important;
+    }
+}
 .dark-btn {
     transition: 0.5s ease-out;
     color: #f8f8fa !important;
@@ -201,5 +212,12 @@ footer {
     &:hover {
         background-color: #f6f6f6;
         transition: 0.2s ease;
+    }
+}
+.btn-black {
+    background-color: #2c2c2c !important;
+    color: white !important;
+    &:hover {
+        background-color: #4b4b4b !important;
     }
 }
