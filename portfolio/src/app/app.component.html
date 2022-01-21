@@ -95,8 +95,9 @@
     <div class="row mt-5">
       <div class="col-md-6 col-lg-4 " *ngFor="let i of servicios">
         <div class="d-flex flex-wrap service">
-          <img class="p-3" [src]=" 'assets/img/services/' + i.icon + '.png' " alt="">
+          <!-- <img class="p-3" [src]=" 'assets/img/services/' + i.icon + '.png' " alt=""> -->
           <div class="text-left p-3">
+            <img class="mb-3" [src]=" 'assets/img/services/' + i.icon + '.png' " alt="">
             <h5 class="mb-0">{{i.servicio}}</h5>
             <p>{{i.descripcion}}</p>
           </div>
