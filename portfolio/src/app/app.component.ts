@@ -29,38 +29,38 @@ export class AppComponent {
       icon: 'wireframing'
     },
     {
-      servicio: 'Prototype Design',
-      descripcion: 'Plan, research and design of high-fidelity mockups and prototypes using Figma and Photoshop',
+      servicio: 'Production-ready Prototypes',
+      descripcion: 'Planning, researching and design of high-fidelity mockups and prototypes using Figma and Photoshop',
       icon: 'mockup'
     },
     {
       servicio: 'Website Restyling',
-      descripcion: 'Partially/Completelly modify a website.',
+      descripcion: 'Partially/Completelly modifying existing websites.',
       icon: 'restyle'
     },
     {
       servicio: 'WordPress',
-      descripcion: 'Develop/Maintain/Modify a WordPress site',
+      descripcion: 'Developing/Maintaining/Modifying WordPress sites',
       icon: 'wordpress'
     },
     {
       servicio: 'Shopify',
-      descripcion: 'Design and deploy a custom Shopify store',
+      descripcion: 'Designing and deploying custom Shopify stores',
       icon: 'shopify'
     },
     {
       servicio: 'CMS',
-      descripcion: 'Design and develop custom the Front-end of a Content Management Systems',
+      descripcion: 'Designing and developing custom UIs for Content Management Systems',
       icon: 'dashboard'
     },
     {
       servicio: 'Express Websites',
-      descripcion: 'Design and create static websites and landing pages',
+      descripcion: 'Designing and coding static websites and landing pages',
       icon: 'website'
     },
     {
       servicio: 'Enterprise',
-      descripcion: 'Design and development of complex/custom user interfaces',
+      descripcion: 'Designing and developing complex/custom user interfaces',
       icon: 'enterprise'
     }
   ]
