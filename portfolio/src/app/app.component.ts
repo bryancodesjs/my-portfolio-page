@@ -35,7 +35,7 @@ export class AppComponent {
     },
     {
       servicio: 'Website Restyling',
-      descripcion: 'Partially/Completelly modifying existing websites.',
+      descripcion: 'Partially/Completely modifying existing websites.',
       icon: 'restyle'
     },
     {
