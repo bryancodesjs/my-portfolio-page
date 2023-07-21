@@ -4,23 +4,41 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <!-- <a class="navbar-brand" href="#"><strong>Bryan<span class="text-accent">Campos</span></strong></a> -->
-        <a class="navbar-brand"><img src="../assets/img/bryan-campos-website-logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navitems" aria-controls="navitems" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand"
+          ><img src="../assets/img/bryan-campos-website-logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navitems"
+          aria-controls="navitems"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navitems">
-          <ul class="navbar-nav mb-2 mb-lg-0"> <!-- me-auto -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <!-- me-auto -->
             <li class="nav-item">
               <a class="nav-link" (click)="scrollTo('services')">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" (click)="scrollTo('workhistory')">Previous work</a>
+              <a class="nav-link" (click)="scrollTo('workhistory')"
+                >Previous work</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" (click)="scrollTo('aboutme')">About me</a>
             </li>
             <li class="nav-item">
-              <button class="btn btn-black d-flex" (click)="navigateTo('github')"><i class="ri-github-fill --mr-half"></i> Github</button>
+              <button
+                class="btn btn-black d-flex"
+                (click)="navigateTo('github')"
+              >
+                <i class="ri-github-fill --mr-half"></i> Github
+              </button>
             </li>
           </ul>
         </div>
@@ -33,21 +51,33 @@
       <div class="col-lg-6 d-flex flex-column justify-content-center">
         <div class="content copy animate__animated animate__slideInUp">
           <p class="text-accent"><strong>WELCOME TO MY WEBSITE</strong></p>
-          <h1 class="brand-font"><strong>I'm Bryan, a frontend developer obsessed about UI design and aesthetics.</strong></h1>
-          <h5 class="mb-3 mt-4">I believe web development is art. It's an opportunity to take users to an interesting experience.</h5>
+          <h1 class="brand-font">
+            <strong
+              >I'm Bryan, a frontend developer obsessed about UI design and
+              aesthetics.</strong
+            >
+          </h1>
+          <h5 class="mb-3 mt-4">
+            I believe web development is art. It's an opportunity to take users
+            to an interesting experience.
+          </h5>
           <!-- <p>(no cost)</p> -->
-          <br>
+          <br />
           <div class="d-flex flex-wrap">
-            <a (click)="navigateTo('whatsapp')" class="btn btn-primary --mr d-flex align-items-center mb-3">Reach me on WhatsApp <i class="ri-whatsapp-line"></i></a>
+            <!-- <a (click)="navigateTo('whatsapp')" class="btn btn-primary --mr d-flex align-items-center mb-3">Reach me on WhatsApp <i class="ri-whatsapp-line"></i></a> -->
             <!-- <a (click)="navigateTo('agenda')" class="btn btn-transparent --mr d-flex align-items-center mb-3">Book a video conference </a> -->
 
             <!-- <small class="mt-2 text-muted">(Normalmente contesto en menos de 1 hora)</small> -->
           </div>
         </div>
       </div>
-      <div class="col-lg-6 ">
+      <div class="col-lg-6">
         <div class="content animate__animated animate__slideInUp image">
-          <img class="heroimg w-100" src="assets/img/ipad.webp" alt="image of an ipad showing a website design">
+          <img
+            class="heroimg w-100"
+            src="assets/img/ipad.webp"
+            alt="image of an ipad showing a website design"
+          />
         </div>
       </div>
     </div>
@@ -56,28 +86,148 @@
       <div class="d-flex justify-content-center">
         <div class="content">
           <ul class="d-flex flex-wrap justify-content-center mt-3 technologies">
-            <li><img src="assets/img/html.svg" alt="html 5 logo" title="html 5"></li>
-            <li><img src="assets/img/css.svg" alt="css 3 logo" title="css 3"></li>
-            <li><img src="assets/img/js.svg" alt="javascript logo" title="javascript ES6"></li>
-            <li><img src="assets/img/typescript.svg" alt="typescript logo" title="typescript"></li>
-            <li><img src="assets/img/angular.svg" alt="angular logo" title="angular"></li>
-            <li><img src="assets/img/react.svg" alt="reactjs logo" title="react"></li>
-            <li><img src="assets/img/git-icon.svg" alt="git logo" title="git"></li>
-            <li><img src="assets/img/bootstrap-5-1.svg" alt="bootstrap 5 logo" title="bootstrap 5"></li>
-            <li><img src="assets/img/figma-1.svg" alt="figma logo" title="figma"></li>
-            <li><img src="assets/img/photoshop.svg" alt="adobe photoshop logo" title="adobe photoshop"></li>
-            <li><img src="assets/img/illustrator.svg" alt="adobe illustrator logo" title="adobe illustrator"></li>
-            <li><img src="assets/img/firebase.svg" alt="firebase logo" title="firebase"></li>
-            <li><img src="assets/img/net.svg" alt="asp.net logo" title=".net MVC"></li>
-            <li><img src="assets/img/wordpress.svg" alt="wordpress logo" title="wordpress"></li>
-            <li><img src="assets/img/elementor.svg" alt="elementor logo" title="Elementor"></li>
-            <li><img src="assets/img/shopify.svg" alt="shopify logo" title="Shopify"></li>
-            <li><img src="assets/img/filmora.svg" alt="filmora logo" title="Wondershare Filmora"></li>
-            <li><img src="assets/img/vscode.svg" alt="visual studio code's logo" title="Visual Studio Code"></li>
-            <li><img src="assets/img/github.svg" alt="github logo" title="Github"></li>
-            <li><img src="assets/img/jquery.svg" alt="jquery logo" title="Jquery"></li>
-            <li><img src="assets/img/balsamiq.svg" alt="Balsamiq logo" title="Balsamiq"></li>
-            <li><img src="assets/img/cpanel.svg" alt="Cpanel logo" title="Cpanel"></li>
+            <li>
+              <img src="assets/img/html.svg" alt="html 5 logo" title="html 5" />
+            </li>
+            <li>
+              <img src="assets/img/css.svg" alt="css 3 logo" title="css 3" />
+            </li>
+            <li>
+              <img
+                src="assets/img/js.svg"
+                alt="javascript logo"
+                title="javascript ES6"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/typescript.svg"
+                alt="typescript logo"
+                title="typescript"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/angular.svg"
+                alt="angular logo"
+                title="angular"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/react.svg"
+                alt="reactjs logo"
+                title="react"
+              />
+            </li>
+            <li>
+              <img src="assets/img/git-icon.svg" alt="git logo" title="git" />
+            </li>
+            <li>
+              <img
+                src="assets/img/bootstrap-5-1.svg"
+                alt="bootstrap 5 logo"
+                title="bootstrap 5"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/figma-1.svg"
+                alt="figma logo"
+                title="figma"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/photoshop.svg"
+                alt="adobe photoshop logo"
+                title="adobe photoshop"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/illustrator.svg"
+                alt="adobe illustrator logo"
+                title="adobe illustrator"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/firebase.svg"
+                alt="firebase logo"
+                title="firebase"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/net.svg"
+                alt="asp.net logo"
+                title=".net MVC"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/wordpress.svg"
+                alt="wordpress logo"
+                title="wordpress"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/elementor.svg"
+                alt="elementor logo"
+                title="Elementor"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/shopify.svg"
+                alt="shopify logo"
+                title="Shopify"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/filmora.svg"
+                alt="filmora logo"
+                title="Wondershare Filmora"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/vscode.svg"
+                alt="visual studio code's logo"
+                title="Visual Studio Code"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/github.svg"
+                alt="github logo"
+                title="Github"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/jquery.svg"
+                alt="jquery logo"
+                title="Jquery"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/balsamiq.svg"
+                alt="Balsamiq logo"
+                title="Balsamiq"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/img/cpanel.svg"
+                alt="Cpanel logo"
+                title="Cpanel"
+              />
+            </li>
           </ul>
         </div>
       </div>
@@ -86,21 +236,27 @@
 </header>
 
 <!-- services section -->
-<section id="services" class="container-fluid pt-5 pb-5 accent-light-bg animate__animated animate__fadeIn">
+<section
+  id="services"
+  class="container-fluid pt-5 pb-5 accent-light-bg animate__animated animate__fadeIn"
+>
   <div class="container column no-m-p3">
     <div class="text-center">
       <h6 class="mb-3 text-uppercase text-accent">SERVICES</h6>
       <h3>What I am best at</h3>
-      
     </div>
     <div class="row mt-5">
-      <div class="col-md-6 col-lg-4 " *ngFor="let i of servicios">
+      <div class="col-md-6 col-lg-4" *ngFor="let i of servicios">
         <div class="d-flex flex-wrap service">
           <!-- <img class="p-3" [src]=" 'assets/img/services/' + i.icon + '.png' " alt=""> -->
           <div class="text-left p-3">
-            <img class="mb-3" [src]=" 'assets/img/services/' + i.icon + '.png' " alt="">
-            <h5 class="mb-0">{{i.servicio}}</h5>
-            <p class="mb-0">{{i.descripcion}}</p>
+            <img
+              class="mb-3"
+              [src]="'assets/img/services/' + i.icon + '.png'"
+              alt=""
+            />
+            <h5 class="mb-0">{{ i.servicio }}</h5>
+            <p class="mb-0">{{ i.descripcion }}</p>
           </div>
         </div>
       </div>
@@ -109,7 +265,10 @@
 </section>
 
 <!-- work -->
-<section id="workhistory" class="container-fluid pt-5 pb-5 light-bg animate__animated animate__fadeIn">
+<section
+  id="workhistory"
+  class="container-fluid pt-5 pb-5 light-bg animate__animated animate__fadeIn"
+>
   <div class="column container no-m-p3">
     <div class="text-center">
       <h6 class="mb-3 text-uppercase text-accent">PREVIOUS WORK</h6>
@@ -118,10 +277,14 @@
     <div class="row grid mt-5">
       <div class="grid-item" *ngFor="let i of trabajos">
         <div class="card w-100" (click)="toggleModal(i)">
-          <img [src]=" 'assets/img/work/' + i.imagen + '.jpg' " class="card-img-top" alt="...">
+          <img
+            [src]="'assets/img/work/' + i.imagen + '.jpg'"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
-            <h5 class="card-title">{{i.trabajo}}</h5>
-            <p class="card-text">{{i.descripcion}}</p>
+            <h5 class="card-title">{{ i.trabajo }}</h5>
+            <p class="card-text">{{ i.descripcion }}</p>
           </div>
         </div>
       </div>
@@ -130,7 +293,10 @@
 </section>
 
 <!-- about me -->
-<section id="aboutme" class="container-fluid pt-5 pb-5 light-bg animate__animated animate__fadeIn">
+<section
+  id="aboutme"
+  class="container-fluid pt-5 pb-5 light-bg animate__animated animate__fadeIn"
+>
   <div class="column container no-m-p3">
     <div class="text-center">
       <h6 class="mb-3 text-uppercase text-accent">About Me</h6>
@@ -142,25 +308,36 @@
           <div class="col-lg-4 mb-4">
             <div class="content">
               <div class="profile-pic rounded-circle overflow-hidden">
-                <img class="w-100" src="assets/img/bryan-campos.jfif" alt="profile picture of Bryan Campos">
+                <img
+                  class="w-100"
+                  src="assets/img/bryan-campos.jfif"
+                  alt="profile picture of Bryan Campos"
+                />
               </div>
             </div>
           </div>
           <div class="col-lg-8">
             <h5>Front-end Developer / UI Designer</h5>
             <p>
-              Hello! I'm Bryan, a front-end developer with a strong passion for building pixel-perfect and simple user interfaces.
+              Hello! I'm Bryan, a front-end developer with a strong passion for
+              building pixel-perfect and simple user interfaces.
             </p>
             <p>
-              Sometimes, taking an idea and developing it into a customer-ready 
-              solution may seem like a mountain of work: there's so much to do 
-              and the starting point isn't always clear. It's fine, I know it. 
-              I've been there hundreds of times; that's why I'm here: 
-              <strong>to help you turn ideas into beautifully crafted and user-friendly user interfaces.</strong>
+              Sometimes, taking an idea and developing it into a customer-ready
+              solution may seem like a mountain of work: there's so much to do
+              and the starting point isn't always clear. It's fine, I know it.
+              I've been there hundreds of times; that's why I'm here:
+              <strong
+                >to help you turn ideas into beautifully crafted and
+                user-friendly user interfaces.</strong
+              >
             </p>
             <p>I'm excited to talk about your project!</p>
             <div class="d-flex mt-4">
-              <a class="btn btn-primary d-flex align-items-center"><span>Let's start a conversation</span> <i class="ri-whatsapp-line"></i></a>
+              <a class="btn btn-primary d-flex align-items-center"
+                ><span>Let's start a conversation</span>
+                <i class="ri-whatsapp-line"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -185,15 +362,37 @@
       </div>
       <div class="col-lg-3 mb-4">
         <h5 class="mb-3">References</h5>
-        <a (click)="navigateTo('linkedin')" class="btn dark-btn mb-2 d-flex align-items-center">LinkedIn <i class="ri-linkedin-box-fill"></i></a>
-        <a (click)="navigateTo('github')" class="btn dark-btn d-flex align-items-center">Github <i class="ri-github-fill"></i></a>
+        <a
+          (click)="navigateTo('linkedin')"
+          class="btn dark-btn mb-2 d-flex align-items-center"
+          target="_blank"
+          >LinkedIn <i class="ri-linkedin-box-fill"></i
+        ></a>
+        <a
+          (click)="navigateTo('github')"
+          class="btn dark-btn d-flex align-items-center"
+          target="_blank"
+          >Github <i class="ri-github-fill"></i
+        ></a>
         <!-- <a href="" class="btn dark-btn mb-2">Stack Overflow</a> -->
       </div>
       <div class="col-lg-3">
         <h5 class="mb-3">Contact</h5>
-        <a (click)="navigateTo('whatsapp')" class="btn dark-btn mb-2 d-flex align-items-center">Whatsapp <i class="ri-whatsapp-fill"></i></a>
-        <a (click)="navigateTo('email')" class="btn dark-btn mb-2 d-flex align-items-center">Email <i class="ri-mail-fill"></i></a>
-        <a (click)="navigateTo('instagram')" class="btn dark-btn mb-2 d-flex align-items-center">Instagram <i class="ri-instagram-fill"></i></a>
+        <a
+          (click)="navigateTo('whatsapp')"
+          class="btn dark-btn mb-2 d-flex align-items-center"
+          >Whatsapp <i class="ri-whatsapp-fill"></i
+        ></a>
+        <a
+          (click)="navigateTo('email')"
+          class="btn dark-btn mb-2 d-flex align-items-center"
+          >Email <i class="ri-mail-fill"></i
+        ></a>
+        <a
+          (click)="navigateTo('instagram')"
+          class="btn dark-btn mb-2 d-flex align-items-center"
+          >Instagram <i class="ri-instagram-fill"></i
+        ></a>
       </div>
     </div>
     <!-- firma -->
@@ -204,46 +403,90 @@
 </footer>
 
 <!-- preview modal -->
-<div class="modal fade" id="previewmodal" aria-hidden="true" aria-labelledby="previewmodal" tabindex="-1">
-  <div class="modal-dialog modal-lg modal-dialog-centered animate__animated animate__fadeIn">
+<div
+  class="modal fade"
+  id="previewmodal"
+  aria-hidden="true"
+  aria-labelledby="previewmodal"
+  tabindex="-1"
+>
+  <div
+    class="modal-dialog modal-lg modal-dialog-centered animate__animated animate__fadeIn"
+  >
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">{{workOnModal.trabajo}}</h4>
-        <button (click)="toggleModal('')" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h4 class="modal-title">{{ workOnModal.trabajo }}</h4>
+        <button
+          (click)="toggleModal('')"
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
       </div>
       <div class="modal-body">
-        <div class="mb-4 mt-3">
-          <h5>Project Summary</h5>
-          <p>{{workOnModal.descripcion}}.</p>
-        </div>
-        <div class="mb-5">
-          <h5>Skills and tools I used in this project</h5>
-          <ul class="skill-list mt-1">
-            <li class="skill-list_badge text-capitalize" *ngFor="let skill of workOnModal.skills">{{skill}}</li>
-          </ul>
-        </div>
-        <!-- If there is a Figma link or github link for this item, show this section -->
-        <div class="mb-5" *ngIf="workOnModal.figmaLink !='none'||workOnModal.githubLink !='none'||workOnModal.itemWebsite !='none' ">
-          <h5 class="mb-3">Inspect this project</h5>
-          <!-- if there is a Figma link, show this button -->
-          <a class="inspect-btn" (click)="navigateTo('figma')" *ngIf="workOnModal.figmaLink !='none' ">
-            <span><img src="../assets/img/figma-1.svg" alt="Figma icon"></span>
-            <span class="inspect-btn_text">View on Figma</span>
-          </a>
-          <!-- if there is a Github link, show this button -->
-          <a class="inspect-btn" (click)="navigateTo('githubItem')" *ngIf="workOnModal.githubLink !='none' ">
-            <span><img src="../assets/img/github.svg" alt="Github icon"></span>
-            <span class="inspect-btn_text">View on Github</span>
-          </a>
-          <!-- if there is a website link, show this button -->
-          <a class="inspect-btn" (click)="navigateTo('itemWebsite')" *ngIf="workOnModal.itemWebsite !='none' ">
-            <span><img src="../assets/img/global-line.svg" alt="World icon"></span>
-            <span class="inspect-btn_text">View live website</span>
-          </a>
-        </div>
-        <div>
-          <h5>Project Snapshot</h5>
-          <img class="w-100 preview-img border" loading="lazy" [src]=" 'assets/img/work/' + workOnModal.preview " alt="Preview image of a website designed by Bryan">
+        <div class="vstack gap-3">
+          <div>
+            <h5>Project Summary</h5>
+            <p class="mb-0">{{ workOnModal.descripcion }}.</p>
+          </div>
+
+          <div class="hstack gap-2">
+            <a
+              class="inspect-btn"
+              (click)="navigateTo('figma')"
+              *ngIf="workOnModal.figmaLink != 'none'"
+            >
+              <span
+                ><img src="../assets/img/figma-1.svg" alt="Figma icon"
+              /></span>
+              <span class="inspect-btn_text">View on Figma</span>
+            </a>
+            <a
+              class="inspect-btn"
+              (click)="navigateTo('githubItem')"
+              *ngIf="workOnModal.githubLink != 'none'"
+            >
+              <span
+                ><img src="../assets/img/github.svg" alt="Github icon"
+              /></span>
+              <span class="inspect-btn_text">View on Github</span>
+            </a>
+            <!-- if there is a website link, show this button -->
+            <a
+              class="inspect-btn"
+              (click)="navigateTo('itemWebsite')"
+              *ngIf="workOnModal.itemWebsite != 'none'"
+            >
+              <span
+                ><img src="../assets/img/global-line.svg" alt="World icon"
+              /></span>
+              <span class="inspect-btn_text">View live website</span>
+            </a>
+          </div>
+
+          <div>
+            <h6>Skills and tools I used in this project</h6>
+            <ul class="skill-list">
+              <li
+                class="skill-list_badge text-capitalize"
+                *ngFor="let skill of workOnModal.skills"
+              >
+                {{ skill }}
+              </li>
+            </ul>
+          </div>
+          <!-- If there is a Figma link or github link for this item, show this section -->
+
+          <div>
+            <h6>Project Snapshot</h6>
+            <img
+              class="w-100 preview-img border"
+              loading="lazy"
+              [src]="'assets/img/work/' + workOnModal.preview"
+              alt="Preview image of a website designed by Bryan"
+            />
+          </div>
         </div>
       </div>
     </div>
